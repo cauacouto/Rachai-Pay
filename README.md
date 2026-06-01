@@ -1,10 +1,7 @@
 [README.md](https://github.com/user-attachments/files/28331192/README.md)
 <div align="center">
 
-```
-RACHAI-PAY  
-```
-
+### RACHAI-PAY
 ### ⚡ Divida despesas. Simplifique pagamentos. Conecte pessoas.
 
 <br/>
