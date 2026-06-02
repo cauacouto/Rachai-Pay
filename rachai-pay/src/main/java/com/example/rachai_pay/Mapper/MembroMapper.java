@@ -12,7 +12,11 @@ public interface MembroMapper {
 
     @Mapping(target = "usuarioId", source = "usuario.id")
     @Mapping(target = "grupoId", source = "grupo.id")
+    @Mapping(target = "nomeUsuario", source = "usuario.nome")
+    @Mapping(target = "nomeGrupo", source = "grupo.nomeGrupo")
     MembroGrupDto toDto(MembrosGrup entity);
+
+
 
     MembrosGrup toEntity(MembroGrupDto response);
 }
