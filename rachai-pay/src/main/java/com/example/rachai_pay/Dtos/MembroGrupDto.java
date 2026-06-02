@@ -7,6 +7,7 @@ import java.util.UUID;
 
 public record MembroGrupDto(
         UUID usuarioId,
+        String nomeUsuario,
         Long grupoId,
         String nomeGrupo,
         Cargo cargo,
