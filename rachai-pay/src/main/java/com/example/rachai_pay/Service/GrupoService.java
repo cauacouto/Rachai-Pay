@@ -88,7 +88,19 @@ public class GrupoService {
 
     public List<MembroGrupDto> listar(Long idGrupo){
        Grupo grupo =  grupoRepository.findById(idGrupo).orElseThrow(()-> new RuntimeException("grupo nao encontrado"));
-        return grupo.getMembros().stream()
+
+       List<MembrosGrup> membros = membrosGroupRepository.findByGrupo(grupo);
+
+       MembrosGrup criador = new MembrosGrup();
+
+       criador.setUsuario(grupo.getCriador());
+       criador.setGrupo(grupo);
+       criador.setCargo(Cargo.ADMIN);
+       criador.setDataEntrada(grupo.getCriadoEm());
+
+       membros.add(criador);
+
+        return membros.stream()
                 .map(membroMapper::toDto)
                 .collect(Collectors.toList());
 
