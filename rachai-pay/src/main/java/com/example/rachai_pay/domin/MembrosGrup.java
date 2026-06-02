@@ -26,6 +26,7 @@ public class MembrosGrup {
     @JoinColumn(name = "grupo_id")
     private Grupo grupo;
     private LocalDateTime dataEntrada;
+
     @Enumerated(EnumType.STRING)
     private Cargo cargo;
 

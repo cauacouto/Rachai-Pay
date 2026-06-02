@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/rachai-pay.iml" filepath="$PROJECT_DIR$/.idea/rachai-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rachai-pay/rachai-pay.iml" filepath="$PROJECT_DIR$/rachai-pay/rachai-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rachai-payy.iml" filepath="$PROJECT_DIR$/.idea/rachai-payy.iml" />
     </modules>
   </component>
 </project>
